@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;800&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+
+section {
+    height: 100vh;
+}
+
+#first {
+    background: linear-gradient(#232931 93%, #181b1f);
+}
+
+#second {
+    background: linear-gradient(#181b1f 93%, #232931);
+}
+
+#third {
+    background: linear-gradient(#232931 93%, #181b1f);
+}
+
+#fourth {
+    background: linear-gradient(#181b1f 93%, #232931);
+}
+
+footer {
+    background: linear-gradient(#232931 93%, #181b1f);
+    height: 10vh;
+}
+
+section.not-show .box {
+    opacity: 0.5;
+    transform: scale(.7);
+    transition: transform 1s ease;
+}
+
+section#first.not-show .box {
+    transform: scale(.7);
+    transition: transform 3s ease;
+}
+
+section#first.not-show.show .box {
+    transform: scale(1);
+}
+
+.not-show.show .box {
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+/* Barra de navegação */
+
+.alvin-header {
+    font-size: 1.5em;
+    transition: all .5s ease;
+}
+
+.alvin-header:hover {
+    transform: scale(1.1);
+}
+
+nav.navbar-transparente {
+    padding: 20px 0;
+    background: linear-gradient(#181b1f 83%, rgba(0, 0, 0, 0));
+    opacity: .97;
+}
+
+a.nav-link {
+    border-bottom: 3px solid transparent;
+    transition: all .5s ease;
+}
+
+
+
+/* scetion first  */
+
+section#first div {
+    animation: showw 2s;
+}
+
+@keyframes showw {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.bar {
+    /* padding: 10px 0 10px 0; */
+    /* color: transparent;*/ 
+    /* border-radius: 25px;  */
+    animation: bar-color .7s steps(40) infinite normal, not-showw 2s, typing 2s steps(40) 2s normal;
+    white-space: nowrap;
+    /* animation-direction: alternate; */
+    text-shadow: none;
+    width: auto;
+    color: #0dcaf0;
+    overflow: hidden;
+    
+}
+
+@keyframes not-showw {
+    0% {
+        color: transparent;
+        width: 0;
+    }
+    100% {
+        color: #0dcaf0;
+        width: 0;
+    }
+}
+
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+
+    95% {
+        width: 50%;
+    }
+
+    100% {
+        width: auto;
+    }
+}
+
+@keyframes bar-color {
+    0% {
+        border-right: 4px solid transparent;
+    }
+
+    100% {
+        border-right: 4px solid #0dcaf0;
+        /* box-shadow: 0 0 10px black; */
+    }
+}
+
+
+.img-calvin {
+    animation: pulse 1.5s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+/* section second */
+
+.img-alvin {
+    height: 45vh;
+    /* border-right: 7px solid rgb(13, 202, 240); */
+    box-shadow: 0 0 15px rgba(13, 202, 240, .7);
+    transform: scale(1.1);
+    transition: all .6s ease;
+}
+
+.img-alvin:hover {
+    transform: scale(1.2);
+}
+
+.btn-custom {
+    /* width: 18vh; */
+    color: #0dcaf0;
+    border: 1px solid #0dcaf0;
+    transition: all .4s ease;
+    transform: scale(1.1);
+}
+
+.btn-custom:hover {
+    color: #000;
+    background: #0dcaf0;
+    box-shadow: 0 0 30px #0dcaf0;
+    transform: scale(1.3);
+}
+
+.btn-custom i {
+    /* padding-right: 5px; */
+    font-size: 2em;
+}
+
+
+
+/* section third */
+
+.tittle {
+    padding-top: 12vh;
+}
+
+.carousel-item img {
+    height: 60vh;
+}
+
+.tittle p {
+    font-size: 1.3em;
+}
+
+.carousel-item {
+    width: 100%;
+}
+
+.clique-span {
+    font-size: .65em;
+}
+
+/* section fourth */
+
+.html-bar {
+    width: 85%;
+    
+}
+
+.css-bar, .bootstrap-bar {
+    width: 75%;
+    
+}
+
+.js-bar {
+    width: 50%;
+    
+}
+
+.c-bar {
+    width: 70%;
+}
+
+.java-bar {
+    width: 60%;
+}
+
+.progress {
+    background: rgba(0, 0, 0, .5);
+}
+
+.habilities {
+    transform: scale(1.1);
+    transition: all .5s ease;
+}
+
+.habilities:hover {
+    transform: scale(1.25);
+}
+
+/* scroll  */
+
+/* Works on Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #0dcaf0 black;
+  }
+  
+  /* Works on Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: black;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: #0dcaf0;
+    border-radius: 20px;
+  }
+
+
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    a.nav-link:hover {
+        border-bottom: 3px solid #fff;
+        /* transform: scale(1.); */
+    }
+    section {
+        height: 100vh;
+    }
+    .img-calvin {
+        display: none;
+    }
+    .img-alvin {
+        height: 30vh;
+    }
+    .habilities {
+        transform: scale(.9);
+    }
+    footer {
+        height: 15vh;
+    }
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    a.nav-link:hover {
+    border-bottom: 3px solid #fff;
+    /* transform: scale(1.15); */
+    }
+
+    section {
+        height: 150vh;
+    }
+    .img-calvin {
+        display: none;
+    }
+    .img-alvin {
+        height: 30vh;
+    }
+    .habilities {
+        transform: scale(.9);
+    }
+    footer {
+        height: 15vh;
+    }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    a.nav-link:hover {
+        border-bottom: 3px solid #fff;
+        transform: scale(1.15);
+    }
+    .img-calvin {
+        display: block;
+        height: 50vh;
+    }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    a.nav-link:hover {
+        border-bottom: 3px solid #fff;
+        transform: scale(1.15);
+    }
+    .img-calvin {
+        display: block;
+    }
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    a.nav-link:hover {
+        border-bottom: 3px solid #fff;
+        transform: scale(1.15);
+    }
+    .img-calvin {
+        display: block;
+    }
+}
