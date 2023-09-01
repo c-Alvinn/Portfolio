@@ -123,7 +123,7 @@ section#first div {
     }
 
     95% {
-        width: 50%;
+        width: 55%;
     }
 
     100% {
@@ -329,6 +329,19 @@ section#first div {
         display: block;
         height: 50vh;
     }
+    @keyframes typing {
+        0% {
+            width: 0;
+        }
+    
+        95% {
+            width: 75%;
+        }
+    
+        100% {
+            width: auto;
+        }
+    }
 }
 
 /* // Large devices (desktops, 992px and up) */
@@ -344,6 +357,19 @@ section#first div {
     .not-show.show .box {
         transform: scale(.9);
     }
+    @keyframes typing {
+        0% {
+            width: 0;
+        }
+    
+        95% {
+            width: 63%;
+        }
+    
+        100% {
+            width: auto;
+        }
+    }
 }
 
 /* // Extra large devices (large desktops, 1200px and up) */
@@ -354,5 +380,18 @@ section#first div {
     }
     .img-calvin {
         display: block;
+    }
+    @keyframes typing {
+        0% {
+            width: 0;
+        }
+    
+        90% {
+            width: 50%;
+        }
+    
+        100% {
+            width: auto;
+        }
     }
 }
