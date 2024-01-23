@@ -12,8 +12,10 @@ window.onscroll = () => {
 
         if (top >= offset && top < offset + height) {
             sec.classList.add('show');
-        }else {
+        } else {
             sec.classList.remove('show');
         }
     })
-}
+};
+
+alert('Este site está sendo atualizado.\n\nPara visualizar os projetos atualizados entre no link do GitHub na seção "Sobre".');
