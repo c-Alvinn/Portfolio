@@ -18,4 +18,6 @@ window.onscroll = () => {
     })
 };
 
-alert('Este site está sendo atualizado.\n\nPara visualizar os projetos atualizados entre no link do GitHub na seção "Sobre".');
+document.querySelector('.continuar').addEventListener('click', () => {
+    document.querySelector('.aviso-container').style.display = 'none';
+});

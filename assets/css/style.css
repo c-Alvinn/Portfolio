@@ -3,7 +3,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     color: #fff;
-    width: 100%;
+    width: 100vw;
     overflow-x: hidden;
 }
 
@@ -103,7 +103,7 @@ section#first div {
     width: auto;
     color: #0dcaf0;
     overflow: hidden;
-    
+
 }
 
 @keyframes not-showw {
@@ -111,6 +111,7 @@ section#first div {
         color: transparent;
         width: 0;
     }
+
     100% {
         color: #0dcaf0;
         width: 0;
@@ -216,17 +217,18 @@ section#first div {
 
 .html-bar {
     width: 85%;
-    
+
 }
 
-.css-bar, .bootstrap-bar {
+.css-bar,
+.bootstrap-bar {
     width: 75%;
-    
+
 }
 
 .js-bar {
     width: 50%;
-    
+
 }
 
 .c-bar {
@@ -256,21 +258,21 @@ section#first div {
 * {
     scrollbar-width: thin;
     scrollbar-color: #0dcaf0 black;
-  }
-  
-  /* Works on Chrome, Edge, and Safari */
-  *::-webkit-scrollbar {
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
     width: 8px;
-  }
-  
-  *::-webkit-scrollbar-track {
+}
+
+*::-webkit-scrollbar-track {
     background: black;
-  }
-  
-  *::-webkit-scrollbar-thumb {
+}
+
+*::-webkit-scrollbar-thumb {
     background-color: #0dcaf0;
     border-radius: 20px;
-  }
+}
 
 
 /* // Extra small devices (portrait phones, less than 576px) */
@@ -278,18 +280,23 @@ section#first div {
     a.nav-link:hover {
         border-bottom: 3px solid #fff;
     }
+
     section {
         height: 100vh;
     }
+
     .img-calvin {
         display: none;
     }
+
     .img-alvin {
         height: 30vh;
     }
+
     .habilities {
         transform: scale(.9);
     }
+
     footer {
         height: 15vh;
     }
@@ -298,46 +305,56 @@ section#first div {
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
     a.nav-link:hover {
-    border-bottom: 3px solid #fff;
-    /* transform: scale(1.15); */
+        border-bottom: 3px solid #fff;
+        /* transform: scale(1.15); */
     }
 
     section {
         height: 150vh;
     }
+
     .img-calvin {
         display: none;
     }
+
     .img-alvin {
         height: 30vh;
     }
+
     .habilities {
         transform: scale(.9);
     }
+
     footer {
         height: 15vh;
+    }
+
+    .aviso span {
+        font-size: 0.1em;
     }
 }
 
 /* // Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 991.98px) { 
+@media (min-width: 768px) and (max-width: 991.98px) {
     a.nav-link:hover {
         border-bottom: 3px solid #fff;
         transform: scale(1.15);
     }
+
     .img-calvin {
         display: block;
         height: 50vh;
     }
+
     @keyframes typing {
         0% {
             width: 0;
         }
-    
+
         95% {
             width: 75%;
         }
-    
+
         100% {
             width: auto;
         }
@@ -345,27 +362,30 @@ section#first div {
 }
 
 /* // Large devices (desktops, 992px and up) */
-@media (min-width: 992px) and (max-width: 1199.98px) { 
+@media (min-width: 992px) and (max-width: 1199.98px) {
     a.nav-link:hover {
         border-bottom: 3px solid #fff;
         transform: scale(1.15);
     }
+
     .img-calvin {
         display: block;
         height: 70vh;
     }
+
     .not-show.show .box {
         transform: scale(.9);
     }
+
     @keyframes typing {
         0% {
             width: 0;
         }
-    
+
         95% {
             width: 63%;
         }
-    
+
         100% {
             width: auto;
         }
@@ -373,25 +393,69 @@ section#first div {
 }
 
 /* // Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { 
+@media (min-width: 1200px) {
     a.nav-link:hover {
         border-bottom: 3px solid #fff;
         transform: scale(1.15);
     }
+
     .img-calvin {
         display: block;
     }
+
     @keyframes typing {
         0% {
             width: 0;
         }
-    
+
         90% {
             width: 50%;
         }
-    
+
         100% {
             width: auto;
         }
     }
+}
+
+
+/* Aviso */
+
+.aviso-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    position: absolute;
+    z-index: 10;
+}
+
+.aviso {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 2rem 2rem 0 2rem;
+    max-width: 75%;
+    max-height: 75%;
+    min-width: 45%;
+    min-height: 45%;
+    background: #181b1f;
+    border-radius: 1rem;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.aviso span {
+    color: #fff;
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 3rem;
 }
