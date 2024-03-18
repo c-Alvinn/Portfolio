@@ -1,0 +1,17 @@
+@font-face {
+    font-family: Prime;
+    src: url(../font/Prime.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Prime", sans-serif;
+}
+
+html, :root {
+    scroll-behavior: smooth !important;
+}

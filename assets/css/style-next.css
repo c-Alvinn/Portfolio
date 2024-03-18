@@ -1,0 +1,69 @@
+section {
+    justify-content: center;
+}
+
+.message {
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.3em;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 2.5rem;
+    text-align: center;
+    color: #fff;
+
+    padding: 1em;
+    background: #000900e8;
+    border-radius: 20px;
+    border: 3px solid #cbe2a9;
+    box-shadow: 0 0 15px #94dd26, inset 0 0 15px #94dd26;
+}
+
+.message p a {
+    font-size: 2.5rem;
+    color: #94dd26;
+    transition: .25s;
+}
+
+.message p a:hover {
+    color: #cbe2a9;
+    text-shadow: 0 0 5px #94dd26;
+}
+
+.contacts .main {
+    max-width: 100%;
+    padding: 0;
+}
+
+.contacts .main .buttons {
+    gap: 1.2em;
+    min-width: 90%;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 1200px) {
+    .contacts .main .buttons {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 970px) {
+    .message, .message p a {
+        font-size: 2rem;
+    }
+    .contacts .main .buttons {
+        padding: 0;
+    }
+}
+
+@media (max-width: 601px) {
+    .message, .message p a {
+        gap: 1em;
+        font-size: 1.7rem;
+    }
+    .contacts .main .buttons {
+        gap: 1em;
+    }
+}
