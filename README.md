@@ -1,4 +1,4 @@
-# Portifolio
+# Portfolio
  Site criado com intuito de mostrar meu portfólio e informar um pouco sobre mim.
 
  [Acesse aqui!](https://c-alvinn.github.io/Portfolio/)
